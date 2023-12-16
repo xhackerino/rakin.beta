@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="converter">
+    <h2>Hex to RGB Converter</h2>
+    <input type="text" id="hexInput" placeholder="Enter hex e.g. #ff5733">
+    <button onclick="convertHexToRGB()">Convert to RGB</button>
+    <p id="rgbResult"></p>
+</div>
+
+<div class="converter">
+    <h2>RGB to Hex Converter</h2>
+    <input type="number" id="redInput" placeholder="Red (0-255)" min="0" max="255">
+    <input type="number" id="greenInput" placeholder="Green (0-255)" min="0" max="255">
+    <input type="number" id="blueInput" placeholder="Blue (0-255)" min="0" max="255">
+    <button onclick="convertRGBToHex()">Convert to Hex</button>
+    <p id="hexResult"></p>
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
